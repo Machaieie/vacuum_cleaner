@@ -74,7 +74,7 @@ public class Main {
         System.out.println("Limpeza concluída! Aspirador voltou à posição inicial.");
     }
 
-    // Método principal para executar o projeto
+   
     public static void main(String[] args) {
         Main aspirador = new Main(20);
         aspirador.limparSala();
