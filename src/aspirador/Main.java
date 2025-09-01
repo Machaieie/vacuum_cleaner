@@ -1,15 +1,12 @@
-  import java.util.Random;
+import java.util.Random;
+
 public class Main {
-    
-   
-
-
 
     private boolean[] sala; // Representa a sala (true = sujeira, false = limpo)
     private int posicao;    // Posição atual do aspirador
     private Random random;
 
-    public AspiradorDeSujeira(int tamanhoSala) {
+    public Main(int tamanhoSala) {
         this.sala = new boolean[tamanhoSala];
         this.posicao = 0; // Começa na posição inicial (0)
         this.random = new Random();
@@ -79,10 +76,7 @@ public class Main {
 
     // Método principal para executar o projeto
     public static void main(String[] args) {
-        AspiradorDeSujeira aspirador = new AspiradorDeSujeira(20);
+        Main aspirador = new Main(20);
         aspirador.limparSala();
-    
-}
-
-    
+    }
 }
